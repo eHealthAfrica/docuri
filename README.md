@@ -2,15 +2,14 @@
 Rich document ids for CouchDB:
 
 ```js
-'movie/blade-runner/gallery-image/12/medium'
+'movie:blade-runner:gallery-image:12:medium'
 ```
 
 ### Advantages
 * You can access the doc type everywhere (eg. in changes feed, response, view results...)
-* They sort well in Futon and` _all_docs`
-* DocURIs can tell a lot about the document
+* Easily request related documents via `_all_docs` (without an extra view)
+* They sort well in Futon and `_all_docs`
 * You can rely on a schema and construct ids of dependend documents (eg. a specific version of an image)
-* Easily delete related documents (eg. by requesting a range from `_all_docs`)
  
 _Give DocURIs a try!_
 
